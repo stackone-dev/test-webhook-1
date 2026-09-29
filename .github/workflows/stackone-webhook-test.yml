@@ -1,0 +1,9 @@
+name: StackOne Webhook Test
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "StackOne webhook event test"
